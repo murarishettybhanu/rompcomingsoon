@@ -67,7 +67,13 @@
 
     #sub {
         text-align: center;
-        font-size: 2px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    #sinup{
+        text-align: center;
+        font-size: 20px;
         color: #ffffff;
     }
 
@@ -204,6 +210,12 @@
     }
 
     #sub {
+        text-align: center;
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    #sinup{
         text-align: center;
         font-size: 25px;
         color: #ffffff;
