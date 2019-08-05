@@ -1,0 +1,275 @@
+
+    /* // Small devices (landscape phones, 576px and up) */
+    @media (min-width: 300px) {
+        #navbrand {
+        font-size: 25px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url("bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    #heading {
+        font-size: 35px;
+        font-weight: 900;
+        color: #ffffff;
+        width: 70%;
+    }
+
+    #subheading {
+        font-size: 20px;
+        font-weight: normal;
+        color: #ffffff;
+        text-align: center
+    }
+
+    #days {
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #hours {
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #min {
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #sec {
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    .timertext {
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    #sub {
+        text-align: center;
+        font-size: 2px;
+        color: #ffffff;
+    }
+
+    #inp {
+        width: 70%;
+        background: #ffffff;
+        height: 50px;
+        border-radius: 50px;
+    }
+
+    #inpt {
+        width: 70%;
+        border-radius: 50px;
+        height: 50px;
+        border: #ffffff
+    }
+
+    #btun {
+        border-radius: 50px;
+        height: 40px;
+        background: #ffd600;
+        width: 28%;
+        padding: 2.5px;
+        color: #ffffff;
+        font-weight: 900;
+        font-size: 12px;
+    }
+
+    ::placeholder {
+        color: #d4d4d4;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    #social {
+        font-weight: 600;
+        font-size: 20px;
+        color: #ffffff
+    }
+
+    .fa.fa-instagram {
+        color: transparent;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    #contact {
+        font-weight: 600;
+        font-size: 20px;
+        color: #ffffff;
+        width: 80%;
+    }
+
+    #cpy {
+        width: 80%;
+    }
+    #soc{
+        width: 80%;
+    }
+
+    }
+
+    /* // Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+        
+    }
+
+    /* // Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        #navbrand {
+        font-size: 36px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url("bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    #heading {
+        font-size: 64px;
+        font-weight: 900;
+        color: #ffffff;
+        width: 50%;
+    }
+
+    #subheading {
+        font-size: 30px;
+        font-weight: normal;
+        color: #ffffff;
+        text-align: center
+    }
+
+    #days {
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 42px;
+    }
+
+    #hours {
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 42px;
+    }
+
+    #min {
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 42px;
+    }
+
+    #sec {
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        font-size: 42px;
+    }
+
+    .timertext {
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    #sub {
+        text-align: center;
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    #inp {
+        width: 35%;
+        background: #ffffff;
+        height: 50px;
+        border-radius: 50px;
+    }
+
+    #inpt {
+        width: 70%;
+        border-radius: 50px;
+        height: 50px;
+        border: #ffffff
+    }
+
+    #btun {
+        border-radius: 50px;
+        height: 40px;
+        background: #ffd600;
+        width: 28%;
+        padding: 2.5px;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    ::placeholder {
+        color: #d4d4d4;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    #social {
+        font-weight: 600;
+        font-size: 25px;
+        color: #ffffff
+    }
+
+    .fa.fa-instagram {
+        color: transparent;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    #contact {
+        font-weight: 600;
+        font-size: 25px;
+        color: #ffffff;
+        width: 60%;
+    }
+
+    #cpy {
+        width: 30%;
+    }
+    #soc{
+        width: 35%;
+    }
+    }
+
+    /* // Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+        
+    }

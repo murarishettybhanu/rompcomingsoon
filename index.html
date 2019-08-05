@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROMP|Social</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <div class="form-inline">
+                <img src="https://romp.co.in/assets/logo.png" width="70" height="70"
+                    class="d-inline-block align-top ml-3 mt-3" alt="">
+                <p class="ml-3 mt-4" id="navbrand">Romp Social</p>
+            </div>
+        </a>
+    </nav>
+    <div class="container">
+        <p id="heading" class="mx-auto">Coming Soon</p>
+        <p id="subheading" class="mx-auto">Our website is under construction, we’re working very hard to give you the
+            best experience on our new site.</p><br>
+        <div class="row">
+            <div class="col-md-3">
+                <p id="days"></p>
+                <p class="timertext">Days</p>
+            </div>
+            <div class="col-md-3">
+                <p id="hours"></p>
+                <p class="timertext">Hours</p>
+            </div>
+            <div class="col-md-3">
+                <p id="min"></p>
+                <p class="timertext">Minutes</p>
+            </div>
+            <div class="col-md-3">
+                <p id="sec"></p>
+                <p class="timertext">Seconds</p>
+            </div>
+        </div><br><br>
+        <p id="sub">Please subscribe to be notified for further information</p>
+        <div id="inp" class="mx-auto form-inline">
+            <input type="text" class="form-control" id="inpt" placeholder="Enter Email Id">
+            <button class="btn" id="btun">Get notified</button>
+        </div><br><br><br>
+        <div id="soc" class="mx-auto form-inline">
+            <p id="social">Meanwhile, follow us on</p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-facebook-square" style="font-size: 35px;color:#475993;"
+                aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-instagram" style="font-size: 35px;" aria-hidden="true"></i>
+        </div>
+        <p id="contact" class="mx-auto">Contact us on : support@romp.co.in | +91 96522 21718</p><br><br><br>
+        <div id="cpy" class="mx-auto">
+            <p>&copy; &nbsp;2019 Romp | All Rights Reserved</p>
+        </div>
+    </div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 5, 2019 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("min").innerHTML = minutes;
+            document.getElementById("sec").innerHTML = seconds;
+
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
