@@ -7,6 +7,7 @@ const fileUpload = require("express-fileupload");
 const expressSession = require("express-session");
 const connectMongo = require("connect-mongo");
 const connectFlash = require("connect-flash");
+var cors = require('cors')
 
 const homePageController = require("./controllers/homePage");
 const storePostController = require("./controllers/storePost");
@@ -21,6 +22,7 @@ const app = new express();
 mongoose.connect("mongodb://localhost/romp");
 
 app.use(connectFlash());
+app.use(cors());
 
 const mongoStore = connectMongo(expressSession);
 
@@ -56,7 +58,7 @@ app.post("/posts/store", storePostController);
 app.get("/auth/login", redirectIfAuthenticated, loginController);
 app.post("/users/login", redirectIfAuthenticated, loginUserController);
 app.get("/auth/register", redirectIfAuthenticated, createUserController);
-app.get("/subscribers",auth,subscribersController)
+app.get("/subscribers", auth, subscribersController)
 app.post("/users/register", redirectIfAuthenticated, storeUserController);
 app.use((req, res) => res.render('not-found'));
 
