@@ -4,6 +4,7 @@ const PostSchema = new mongoose.Schema({
   email: String,
   createdAt: {
     type: Date,
+    unique: true,
     default: new Date()
   }
 })

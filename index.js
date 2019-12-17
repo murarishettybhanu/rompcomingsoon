@@ -19,7 +19,7 @@ const loginUserController = require("./controllers/loginUser");
 const logoutController = require("./controllers/logout");
 
 const app = new express();
-mongoose.connect("mongodb://localhost/romp");
+mongoose.connect("mongodb://localhost/buzygo");
 
 app.use(connectFlash());
 app.use(cors());
@@ -62,6 +62,6 @@ app.get("/subscribers", auth, subscribersController)
 app.post("/users/register", redirectIfAuthenticated, storeUserController);
 app.use((req, res) => res.render('not-found'));
 
-app.listen(3000, () => {
+app.listen(3001, () => {
   console.log("App listening on port 3000");
 });
