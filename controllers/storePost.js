@@ -1,11 +1,10 @@
 const Post = require('../database/models/Post')
 
 module.exports = (req, res) => {
-  console.log('hii');
-  var a = req.body;
-  var email = a.email;
-  console.log(email);
-  Post.create(email, (error, post) => {
-    res.redirect('/')
+  Post.create(req.body, (error, post) => {
+    if(error){
+      return res.status(400).json({ message: err.message });    
+    }
+    res.text(post)
   });
 }
