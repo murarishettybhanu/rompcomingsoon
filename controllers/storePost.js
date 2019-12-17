@@ -5,6 +5,6 @@ module.exports = (req, res) => {
     if(error){
       return res.status(400).json({ message: err.message });    
     }
-    res.text(post)
+    res.json(post)
   });
 }
